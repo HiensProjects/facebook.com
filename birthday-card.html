@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Happy Birthday!</title>
+</head>
+<body>
+<h1>Wish you all the best in this special day! :D</h1>
+<script>
+    if (window.opener) {
+        opener.location = 'https://mathiasbynens.github.io/rel-noopener/#hax';
+        // Just `opener.location.hash = '#hax'` only works on the same origin.
+    } else {
+        document.querySelector('h1').innerHTML = 'The previous tab is safe and intact. <code>window.opener</code> was <code>null</code>;';
+    }
+</script>
+</body>
+</html>
